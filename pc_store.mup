@@ -1,0 +1,262 @@
+{
+  "id": "root",
+  "title": "PC Store",
+  "ideas": {
+    "1": {
+      "id": "frontend",
+      "title": "FRONTEND (Vue.js)",
+      "ideas": {
+        "1": {
+          "id": "pages-user",
+          "title": "Сторінки користувача",
+          "ideas": {
+            "1": { "id": "homepage", "title": "HomePage" },
+            "2": {
+              "id": "catalog",
+              "title": "ProductsCatalogPage",
+              "ideas": {
+                "1": { "id": "cat-filter", "title": "Фільтр за категорією" },
+                "2": { "id": "cat-search", "title": "Пошук за назвою" },
+                "3": { "id": "cat-sort", "title": "Сортування" },
+                "4": { "id": "cat-page", "title": "Пагінація" }
+              }
+            },
+            "3": {
+              "id": "details",
+              "title": "ProductDetailsPage",
+              "ideas": {
+                "1": { "id": "det-spec", "title": "Характеристики товару" },
+                "2": { "id": "det-related", "title": "Схожі товари" },
+                "3": { "id": "det-cart", "title": "Додати в кошик" }
+              }
+            },
+            "4": {
+              "id": "cart",
+              "title": "CartPage",
+              "ideas": {
+                "1": { "id": "cart-qty", "title": "Зміна кількості" },
+                "2": { "id": "cart-del", "title": "Видалення товару" },
+                "3": { "id": "cart-sum", "title": "Розрахунок суми" }
+              }
+            },
+            "5": {
+              "id": "checkout",
+              "title": "CheckoutPage",
+              "ideas": {
+                "1": { "id": "ch-contact", "title": "Форма контактних даних" },
+                "2": { "id": "ch-address", "title": "Адреса доставки" },
+                "3": { "id": "ch-confirm", "title": "Підтвердження замовлення" }
+              }
+            },
+            "6": { "id": "auth-pages", "title": "LoginPage / RegisterPage" },
+            "7": {
+              "id": "profile",
+              "title": "ProfilePage",
+              "ideas": {
+                "1": { "id": "prof-edit", "title": "Редагування профілю" },
+                "2": { "id": "prof-orders", "title": "Історія замовлень" }
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "admin-panel",
+          "title": "Адмін-панель",
+          "ideas": {
+            "1": { "id": "adm-dash", "title": "AdminDashboard" },
+            "2": {
+              "id": "adm-products",
+              "title": "AdminProducts",
+              "ideas": {
+                "1": { "id": "adm-p-add", "title": "Додавання товару" },
+                "2": { "id": "adm-p-edit", "title": "Редагування товару" },
+                "3": { "id": "adm-p-del", "title": "Видалення товару" }
+              }
+            },
+            "3": {
+              "id": "adm-categories",
+              "title": "AdminCategories",
+              "ideas": {
+                "1": { "id": "adm-c-add", "title": "Додавання категорії" },
+                "2": { "id": "adm-c-edit", "title": "Редагування категорії" },
+                "3": { "id": "adm-c-del", "title": "Видалення категорії" }
+              }
+            },
+            "4": {
+              "id": "adm-orders",
+              "title": "AdminOrders",
+              "ideas": {
+                "1": { "id": "adm-o-list", "title": "Перегляд замовлень" },
+                "2": { "id": "adm-o-status", "title": "Зміна статусу" }
+              }
+            },
+            "5": {
+              "id": "adm-users",
+              "title": "AdminUsers",
+              "ideas": {
+                "1": { "id": "adm-u-list", "title": "Перегляд користувачів" },
+                "2": { "id": "adm-u-role", "title": "Зміна ролі" }
+              }
+            }
+          }
+        },
+        "3": {
+          "id": "components",
+          "title": "Компоненти",
+          "ideas": {
+            "1": { "id": "comp-header", "title": "Header" },
+            "2": { "id": "comp-footer", "title": "Footer" },
+            "3": { "id": "comp-card", "title": "ProductCard" },
+            "4": { "id": "comp-cartitem", "title": "CartItem" },
+            "5": { "id": "comp-filter", "title": "CategoryFilter" },
+            "6": { "id": "comp-search", "title": "SearchBar" },
+            "7": { "id": "comp-pagination", "title": "Pagination" }
+          }
+        },
+        "4": {
+          "id": "state",
+          "title": "Стан (Pinia)",
+          "ideas": {
+            "1": {
+              "id": "cart-store",
+              "title": "cartStore",
+              "ideas": {
+                "1": { "id": "cs-items", "title": "items" },
+                "2": { "id": "cs-add", "title": "addToCart" },
+                "3": { "id": "cs-remove", "title": "removeFromCart" },
+                "4": { "id": "cs-clear", "title": "clearCart" }
+              }
+            },
+            "2": {
+              "id": "user-store",
+              "title": "userStore",
+              "ideas": {
+                "1": { "id": "us-user", "title": "currentUser" },
+                "2": { "id": "us-auth", "title": "login / logout" },
+                "3": { "id": "us-load", "title": "loadUser" }
+              }
+            },
+            "3": {
+              "id": "order-store",
+              "title": "orderStore",
+              "ideas": {
+                "1": { "id": "os-orders", "title": "orders" },
+                "2": { "id": "os-fetch", "title": "fetchOrders" },
+                "3": { "id": "os-create", "title": "createOrder" }
+              }
+            }
+          }
+        },
+        "5": {
+          "id": "router",
+          "title": "Маршрутизація (Vue Router)",
+          "ideas": {
+            "1": { "id": "r-public", "title": "Публічні маршрути" },
+            "2": { "id": "r-auth", "title": "requiresAuth" },
+            "3": { "id": "r-admin", "title": "requiresAdmin" }
+          }
+        },
+        "6": {
+          "id": "api-service",
+          "title": "Сервісний шар (api.js)",
+          "ideas": {
+            "1": { "id": "svc-auth", "title": "auth" },
+            "2": { "id": "svc-products", "title": "products" },
+            "3": { "id": "svc-orders", "title": "orders" },
+            "4": { "id": "svc-categories", "title": "categories" },
+            "5": { "id": "svc-users", "title": "users" }
+          }
+        }
+      }
+    },
+    "2": {
+      "id": "backend",
+      "title": "BACKEND (PHP + MySQL)",
+      "ideas": {
+        "1": {
+          "id": "api-modules",
+          "title": "API модулі",
+          "ideas": {
+            "1": {
+              "id": "api-auth",
+              "title": "auth.php",
+              "ideas": {
+                "1": { "id": "api-auth-reg", "title": "POST /register" },
+                "2": { "id": "api-auth-login", "title": "POST /login" }
+              }
+            },
+            "2": {
+              "id": "api-products",
+              "title": "products.php",
+              "ideas": {
+                "1": { "id": "api-p-get", "title": "GET /products" },
+                "2": { "id": "api-p-getid", "title": "GET /products/{id}" },
+                "3": { "id": "api-p-post", "title": "POST /products" },
+                "4": { "id": "api-p-put", "title": "PUT /products/{id}" },
+                "5": { "id": "api-p-del", "title": "DELETE /products/{id}" }
+              }
+            },
+            "3": {
+              "id": "api-orders",
+              "title": "orders.php",
+              "ideas": {
+                "1": { "id": "api-o-get", "title": "GET /orders" },
+                "2": { "id": "api-o-getid", "title": "GET /orders/{id}" },
+                "3": { "id": "api-o-post", "title": "POST /orders" },
+                "4": { "id": "api-o-patch", "title": "PATCH /orders/{id}" }
+              }
+            },
+            "4": {
+              "id": "api-categories",
+              "title": "categories.php",
+              "ideas": {
+                "1": { "id": "api-c-get", "title": "GET /categories" },
+                "2": { "id": "api-c-post", "title": "POST /categories" },
+                "3": { "id": "api-c-put", "title": "PUT /categories/{id}" },
+                "4": { "id": "api-c-del", "title": "DELETE /categories/{id}" }
+              }
+            },
+            "5": {
+              "id": "api-users",
+              "title": "users.php",
+              "ideas": {
+                "1": { "id": "api-u-get", "title": "GET /users" },
+                "2": { "id": "api-u-me", "title": "PATCH /users/me" },
+                "3": { "id": "api-u-role", "title": "PATCH /users/{id}" }
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "middleware",
+          "title": "Middleware",
+          "ideas": {
+            "1": { "id": "mw-auth", "title": "requireAuth()" },
+            "2": { "id": "mw-admin", "title": "requireAdmin()" },
+            "3": { "id": "mw-super", "title": "requireSuperAdmin()" }
+          }
+        },
+        "3": {
+          "id": "config",
+          "title": "Конфігурація",
+          "ideas": {
+            "1": { "id": "cfg-db", "title": "db.php (PDO)" },
+            "2": { "id": "cfg-jwt", "title": "jwt.php (JWT)" },
+            "3": { "id": "cfg-htaccess", "title": ".htaccess (Apache)" }
+          }
+        },
+        "4": {
+          "id": "database",
+          "title": "База даних (MySQL)",
+          "ideas": {
+            "1": { "id": "db-users", "title": "users" },
+            "2": { "id": "db-products", "title": "products" },
+            "3": { "id": "db-categories", "title": "categories" },
+            "4": { "id": "db-orders", "title": "orders" },
+            "5": { "id": "db-order-items", "title": "order_items" }
+          }
+        }
+      }
+    }
+  }
+}
