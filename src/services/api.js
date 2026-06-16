@@ -1,10 +1,12 @@
-import axios from 'axios';
-import router from '../router';
-
-const http = axios.create({
-  baseURL: 'http://localhost/pc_store/backend/',
-  headers: { 'Content-Type': 'application/json' }
+import axios from 'axios'; 
+const http = axios.create({ 
+  baseURL: 'https://pcstore-production-182c.up.railway.app', 
+  headers: { 'Content-Type': 'application/json' } 
 });
+
+
+
+
 
 // Attach JWT from localStorage on every request
 http.interceptors.request.use((config) => {
@@ -40,19 +42,19 @@ export const api = {
   // Public product browsing
   products: {
     getAll: (category) =>
-      http.get('api/products', { params: category ? { category } : {} }),
+      http.get('/products', { params: category ? { category } : {} }),
     getById: (id) =>
-      http.get(`api/products/${id}`)
+      http.get(`/products/${id}`)
   },
 
   // Public categories
   categories: {
-    getAll: () => http.get('api/categories')
+    getAll: () => http.get('/categories')
   },
 
   // User's own orders
   orders: {
-    getAll: () => http.get('api/orders'),
+    getAll: () => http.get('/orders'),
     getById: (id) => http.get(`api/orders/${id}`),
     create: (orderData) => http.post('api/orders', orderData)
   },
@@ -75,9 +77,9 @@ export const api = {
 
   // Wishlist
   wishlist: {
-    getAll: () => http.get('api/wishlist'),
-    add: (productId) => http.post('api/wishlist', { product_id: productId }),
-    remove: (productId) => http.delete(`api/wishlist/${productId}`)
+    getAll: () => http.get('/wishlist'),
+    add: (productId) => http.post('/wishlist', { product_id: productId }),
+    remove: (productId) => http.delete(`/wishlist/${productId}`)
   },
 
   // File upload
@@ -110,19 +112,19 @@ export const adminApi = {
   // Products management (CRUD)
   products: {
     getAll: (category) =>
-      http.get('api/products', { params: category ? { category } : {} }),
-    getById: (id) => http.get(`api/products/${id}`),
-    create: (data) => http.post('api/products', data),
-    update: (id, data) => http.post(`api/products/${id}`, data),
-    delete: (id) => http.delete(`api/products/${id}`)
+      http.get('/products', { params: category ? { category } : {} }),
+    getById: (id) => http.get(`/products/${id}`),
+    create: (data) => http.post('/products', data),
+    update: (id, data) => http.post(`/products/${id}`, data),
+    delete: (id) => http.delete(`/products/${id}`)
   },
 
   // Categories management (CRUD)
   categories: {
-    getAll: () => http.get('api/categories'),
-    create: (data) => http.post('api/categories', data),
-    update: (id, data) => http.put(`api/categories/${id}`, data),
-    delete: (id) => http.delete(`api/categories/${id}`)
+    getAll: () => http.get('/categories'),
+    create: (data) => http.post('/categories', data),
+    update: (id, data) => http.put(`/categories/${id}`, data),
+    delete: (id) => http.delete(`/categories/${id}`)
   },
 
   // Dashboard statistics
